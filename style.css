@@ -237,7 +237,7 @@ a.btn:nth-child(2)::before{
     margin-top: 6rem;
     display: flex;
     justify-content: space-between;
-    width: 220px;
+    width: 280px;
     height: 40px;
 }
 
@@ -264,7 +264,7 @@ a.btn:nth-child(2)::before{
 
 .social-icons a:hover{
     color: var(--bg-color);
-    transform: scale(110%);
+    transform: scale(120%);
 }
 
 .social-icons a::before{
