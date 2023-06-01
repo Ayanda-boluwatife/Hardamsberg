@@ -400,6 +400,45 @@ a.btn:nth-child(2)::before{
     font-weight: 600;
 }
 
+/* ((((((((((((((( Services styles goes here )))))))))))))))))))))) */
+
+.main-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
+
+.main-text h2{
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.main-text span{
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.section-service .service-box{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background-color: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+}
+
 /* Keyframes for animations goes here ((((((((((((((((((((())))))))))))))))))) */
 
 @keyframes infoAboutMe {
