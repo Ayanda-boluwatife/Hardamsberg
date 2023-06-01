@@ -34,6 +34,10 @@ body{
     color: var(--text-color);
 }
 
+span{
+    color: var(--hover-color);
+}
+
 /* ====== nav bar style ============== */
 
 header{
@@ -77,9 +81,9 @@ header{
     0 0 150px rgba(18, 247, 255, 0.6);
 }
 
-/* ======== nav bar ends =========== */
+/* ((((((((((((((((((((( nav bar ends ))))))))))))))))))))))))) */
 
-/* ====== home section styles ============= */
+/* (((((((((((((((((( home section styles ))))))))))))))))))))))) */
 
 #menu-icon{
     font-size: 1.8rem;
@@ -307,4 +311,26 @@ a.btn:nth-child(2)::before{
 
 .liquid-shape:nth-child(2){
     filter: blur(50px);
+}
+
+/* Home section ends here ((((((((((((((((((((())))))))))))))))))) */
+
+/* About styles goes here ((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))) */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--secon-bg-color);
+}
+
+.about .image-about{
+    text-align: center;
+    position: relative;
+}
+
+.about .image-about img{
+    max-width: 400px;
+    height: auto;
 }
