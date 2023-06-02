@@ -427,7 +427,7 @@ a.btn:nth-child(2)::before{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    grid-gap: 2rem;
 }
 
 .section-service .service-box{
@@ -437,6 +437,228 @@ a.btn:nth-child(2)::before{
     background-color: var(--secon-bg-color);
     transition: transform .4s;
     border-radius: 10px;
+}
+
+.service-box h2, .service-box p{
+    padding: 0 0 20px 20px;
+}
+
+.service-btn{
+    width: auto;
+    justify-content: center;
+}
+
+.service-box:hover{
+    transform: translateY(-.7rem);
+    cursor: default;
+}
+
+.service-icon{
+    border: 2px solid var(--hover-color);
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: relative;
+    color: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+    outline: 3px solid var(--bg-color);
+}
+
+.service-box h2{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.service-box p{
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fdfdfd;
+    line-height: 1.6;
+}
+
+/* Skill styles goes here ((((((((((((((((((()))))))))))))) */
+.skill{
+    background-color: var(--secon-bg-color);
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar{
+     margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html{
+    width: 72%;
+    animation: html 3s;
+}
+
+.skill-bar .bar .css{
+    width: 90%;
+    animation: css 3s;
+}
+
+.skill-bar .bar .javascript{
+    width: 80%;
+    animation: javascript 3s;
+}
+
+.skill-bar .bar .tailwind{
+    width: 95%;
+    animation: tailwind 3s;
+}
+
+.skill-bar .bar .reactjs{
+    width: 85%;
+    animation: reactjs 3s;
+}
+
+.professional{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box{
+    margin: 10px 0;
+    flex: 1 1 15rem;
+    position: relative;
+}
+
+.box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.box .text big{
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle .points{
+    width: 5px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translate(45px);
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+/* Portfolio styles goes here (((((((((((((((((())))))))))))))))))) */
+
+.filter-buttons{
+    margin: 2rem;
+    text-align: center;
+}
+
+.filter-buttons .btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    color: var(--text-color);
+}
+
+.filter-buttons .btn:hover{
+    color: var(--hover-color);
+}
+
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+}
+
+.port-box{
+    border: 15px;
+    overflow: hidden;
+    background-color: #292e33;
+    display: flex;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+}
+
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.port-image img{
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transition: .5s;
 }
 
 /* Keyframes for animations goes here ((((((((((((((((((((())))))))))))))))))) */
@@ -453,5 +675,61 @@ a.btn:nth-child(2)::before{
     }
     80%{
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes html {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes tailwind {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes reactjs {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes glow {
+    0%{
+        background-color: var(--hover-color);
+        box-shadow: none;
+    }
+    100%{
+        background-color: var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
     }
 }
