@@ -269,14 +269,14 @@
 
         <div class="container">
             <div class="filter-buttons">
-                <button class="btn">All</button>
-                <button class="btn">Newbie</button>
-                <button class="btn">Intermediate</button>
-                <button class="btn">Experts</button>
+                <button class="btn" data-filter="all">All</button>
+                <button class="btn" data-filter=".newbie">Newbie</button>
+                <button class="btn" data-filter=".inter">Intermediate</button>
+                <button class="btn" data-filter=".expert">Experts</button>
             </div>
 
-            <div class="portfolio-gallery">
-                <div class="port-box">
+            <div class="portfolio-gallery mix all">
+                <div class="port-box mix newbie">
                     <div class="port-image">
                         <img src="./images--main/1.jpg" alt="">
                     </div>
@@ -286,7 +286,7 @@
                         <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="port-box">
+                <div class="port-box mix newbie">
                     <div class="port-image">
                         <img src="./images--main/2.jpg" alt="">
                     </div>
@@ -296,7 +296,7 @@
                         <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="port-box">
+                <div class="port-box mix inter">
                     <div class="port-image">
                         <img src="./images--main/3.jpg" alt="">
                     </div>
@@ -306,7 +306,7 @@
                         <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="port-box">
+                <div class="port-box mix expert">
                     <div class="port-image">
                         <img src="./images--main/4.jpg" alt="">
                     </div>
@@ -316,7 +316,7 @@
                         <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="port-box">
+                <div class="port-box mix inter">
                     <div class="port-image">
                         <img src="./images--main/5.jpg" alt="">
                     </div>
@@ -326,7 +326,7 @@
                         <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="port-box">
+                <div class="port-box mix expert">
                     <div class="port-image">
                         <img src="./images--main/6.jpg" alt="">
                     </div>
@@ -339,6 +339,34 @@
             </div>
         </div>
     </section>
+    <!-- portfolio section ends -->
+
+    <!-- contact section -->
+    <section id="contact" class="contact">
+        <div class="main-text">
+            <span>ask me question</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <form action="#">
+            <input type="text" placeholder="Your Full-Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="number" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section -->
+    <footer>
+        <p>Copyright &copy; 2023 by Hardamsberg || All Right Reserved</p>
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
+    <!-- <script src="mixitup.min.js"></script> -->
     <script src="./index.js"></script>
 </body>
 </html>
